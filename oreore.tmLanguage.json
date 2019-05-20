@@ -1,0 +1,28 @@
+{
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "oreore",
+    "patterns": [
+        {
+            "include": "#keywords"
+        }
+    ],
+    "repository": {
+         "keywords": {
+             "patterns": [
+                {
+                    "name": "keyword.control",
+                    "match": "\\bdef\\b"
+                },
+                {
+                    "name": "keyword.other",
+                    "match": "\\b(eat|give|take)\\b"
+                },
+                {
+                    "name": "variable",
+                    "match": "\\b(apple|banana|cherry)\\b"
+                }
+            ]
+        }
+    },
+    "scopeName": "source.oreore"
+}

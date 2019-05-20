@@ -1,0 +1,51 @@
+{
+    "name": "oreore-language-extension",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.33.1"
+    },
+    "main": "./extension.js",
+    "activationEvents": [
+        "*"
+    ],
+    "contributes": {
+        "commands": [
+            {
+                "command": "oreore.helloWorld",
+                "title": "OreoreMode: say hello world"
+            },
+            {
+                "command": "oreore.formatFile",
+                "title": "OreoreMode: format file"
+            }
+        ],        
+        "languages": [
+            {
+               "id": "oreore",
+               "extensions": [".ore"]
+            }
+        ],
+        "grammars": [{
+            "language": "oreore",
+            "scopeName": "source.oreore",
+            "path": "./oreore.tmLanguage.json"
+        }],
+        "viewsContainers": {
+            "activitybar": [
+                {
+                    "id": "oreore-view",
+                    "title": "oreore explorer",
+                    "icon": "./ore.png"
+                }
+            ]
+        },
+        "views": {
+            "oreore-view": [
+                {
+                    "id": "oreore",
+                    "name": "oreore"
+                }
+            ]
+        }
+    }
+}

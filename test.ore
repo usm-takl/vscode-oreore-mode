@@ -1,0 +1,7 @@
+def apple = 1
+def banana = 2
+def cherry = 3
+
+give apple
+take banana
+eat cherry
